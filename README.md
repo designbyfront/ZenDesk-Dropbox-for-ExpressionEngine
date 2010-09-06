@@ -33,4 +33,4 @@ Images used are remixed versions of the default ZenDesk images - these may be di
 Useful, memorable and satisfying things for the web
 We create amazing online experiences that delight users and help our clients grow.
 
-[DesignByFront.com](http://www.designbyfront.com)
+[Web Design](http://www.designbyfront.com) by Front
