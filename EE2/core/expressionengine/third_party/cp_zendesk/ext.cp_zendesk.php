@@ -249,6 +249,7 @@ class Cp_zendesk_ext
 		$replace .= '<script type="text/javascript" src="'.$this->settings['zendesk_js'].'"></script>'."\n";
 		$replace .= '<script type="text/javascript">'."\n";
 		$replace .= '   $("document").ready(function() {'."\n";
+		$replace .= '      Zenbox.init();'."\n";
 		$replace .= '      $("#zenbox_tab").css({"background-image": "url('.constant('PATH_CP_GBL_IMG').'zendesk_tabs/'.$this->settings['zendesk_param_tab_position'].'/tab_'.$this->settings['zendesk_param_tab_id'].'_front.png)",'."\n";
 		$replace .= '                            "z-index": "10",'."\n";
 		$replace .= '                            "'.$this->settings['zendesk_param_tab_position'].'": "-16px"});'."\n";
