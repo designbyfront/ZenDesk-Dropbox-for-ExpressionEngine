@@ -70,7 +70,7 @@ class Cp_zendesk
 		$settings['zendesk_param_title']          = 'Support';
 		$settings['zendesk_param_subject_header'] = 'Subject';
 		$settings['zendesk_param_subject']        = 'Help, I\'m stuck';
-    $settings['zendesk_param_email_header']   = 'Your email address';
+		$settings['zendesk_param_email_header']   = 'Your email address';
 		$settings['zendesk_param_text']           = 'Hi <b>{screen_name}</b>, how can we help you?'."\n".'Please fill in details below, and we\'ll get back to you as soon as possible!';
 		$settings['zendesk_param_tag']            = 'dropbox';
 		$settings['zendesk_param_url']            = 'name.zendesk.com'; // Change 'name' to your organisations name
@@ -85,7 +85,7 @@ class Cp_zendesk
 						'version'		=> $this->version,
 						'enabled'		=> 'y'
 					);
-	
+
 		$DB->query($DB->insert_string('exp_extensions',	$hook));
 	}
 
@@ -107,7 +107,7 @@ class Cp_zendesk
 			$this->settings = unserialize($query->row['settings']);
 			unset($this->settings['zendesk_css']);
 			unset($this->settings['zendesk_js']);
-		  unset($this->settings['zendesk_param_tab_id']);
+			unset($this->settings['zendesk_param_tab_id']);
 			unset($this->settings['zendesk_param_tab_color']);
 			unset($this->settings['zendesk_param_tab_hover']);
 			unset($this->settings['zendesk_param_tab_position']);
@@ -162,7 +162,7 @@ class Cp_zendesk
 		$settings['zendesk_param_title']          = '';
 		$settings['zendesk_param_subject_header'] = '';
 		$settings['zendesk_param_subject']        = '';
-    $settings['zendesk_param_email_header']   = '';
+		$settings['zendesk_param_email_header']   = '';
 		$settings['zendesk_param_text']           = array('t', '');
 		$settings['zendesk_param_tag']            = '';
 		$settings['zendesk_param_url']            = '';
@@ -231,7 +231,7 @@ class Cp_zendesk
 		$replace .= '   });'."\n";
 		$replace .= '</script>'."\n";
 
-		$replace .= "</head>\n";
+		$replace .= $find."\n";
 
 		$html = str_replace($find, $replace, $html);
 

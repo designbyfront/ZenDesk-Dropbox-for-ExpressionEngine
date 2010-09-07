@@ -107,7 +107,7 @@ class Cp_zendesk_ext
 		}
 
 		$query = $this->EE->db->query("SELECT settings FROM exp_extensions WHERE class = '".$this->EE->db->escape_str(__CLASS__)."'");
-		
+
 		$this->settings = unserialize($query->row['settings']);
 		unset($this->settings['zendesk_css']);
 		unset($this->settings['zendesk_js']);
@@ -125,7 +125,6 @@ class Cp_zendesk_ext
 
 		$this->EE->db->query($this->EE->db->update_string('exp_extensions', array('settings' => serialize($this->settings), 'version' => $this->version), array('class' => __CLASS__)));
 
-		
 		return TRUE;
 	}
 
@@ -152,20 +151,20 @@ class Cp_zendesk_ext
 		$settings['zendesk_css']                  = '';
 		$settings['zendesk_js']	                  = '';
 		$settings['zendesk_param_tab_id']         = array('r', array('support'   => "zendesk_param_tab_support",
-                                                                  'feedback'  => "zendesk_param_tab_feedback",
-                                                                  'help'      => "zendesk_param_tab_help",
-                                                                  'service'   => "zendesk_param_tab_service",
-                                                                  'questions' => "zendesk_param_tab_questions",
-                                                                  'comments'  => "zendesk_param_tab_comments",
-                                                                  'ask_us'    => "zendesk_param_tab_ask_us"),
-                                                      'support');
+		                                                              'feedback'  => "zendesk_param_tab_feedback",
+		                                                              'help'      => "zendesk_param_tab_help",
+		                                                              'service'   => "zendesk_param_tab_service",
+		                                                              'questions' => "zendesk_param_tab_questions",
+		                                                              'comments'  => "zendesk_param_tab_comments",
+		                                                              'ask_us'    => "zendesk_param_tab_ask_us"),
+		                                                  'support');
 		$settings['zendesk_param_tab_color']      = '';
 		$settings['zendesk_param_tab_hover']      = '';
 		$settings['zendesk_param_tab_position']   = array('r', array('left' => "zendesk_param_tab_position_left", 'right' => "zendesk_param_tab_position_right"), 'left');
 		$settings['zendesk_param_title']          = '';
 		$settings['zendesk_param_subject_header'] = '';
 		$settings['zendesk_param_subject']        = '';
-    $settings['zendesk_param_email_header']   = '';
+		$settings['zendesk_param_email_header']   = '';
 		$settings['zendesk_param_text']           = array('t', '');
 		$settings['zendesk_param_tag']            = '';
 		$settings['zendesk_param_url']            = '';
