@@ -65,7 +65,7 @@ class Cp_zendesk_ext
 		$settings =	array();
 		$settings['zendesk_css']                  = 'http://assets0.zendesk.com/external/zenbox/overlay.css';
 		$settings['zendesk_js']	                  = 'http://assets0.zendesk.com/external/zenbox/overlay.js';
-		$settings['zendesk_param_tab_id']	        = 'support';
+		$settings['zendesk_param_tab_id']         = 'support';
 		$settings['zendesk_param_tab_color']      = '#D91350';
 		$settings['zendesk_param_tab_hover']      = '#BB1A4C';
 		$settings['zendesk_param_tab_position']   = 'left';
