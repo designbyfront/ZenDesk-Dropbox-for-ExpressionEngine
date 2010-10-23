@@ -1,16 +1,19 @@
 ## ZenDesk for the Control Panel ##
 An ExpressionEngine Extension that allows the loading of ZenDesk dropbox for use in the ExpressionEngine Control Panel.<br />
-All customisation options are configuable from the extension settings page
+All customisation options are configuable from the extension settings page.<br />
+This extension allows you to use both ZenDesk dropbox [version 1](http://www.zendesk.com/blog/instant-support-access-with-drop-box) and [version 2](https://support.zendesk.com/entries/305020-introducing-a-brand-new-kind-of-zendesk-dropbox).
 
 Available in both EE1 and EE2 versions.<br />
-**Note:** EE2 version requires use of lower level CodeIgniter hooks due to EllisLab removing ControlPanel hooks. This is a bit of a hack.
+**Note:** EE2 version requires use of lower level CodeIgniter hooks due to EllisLab removing ControlPanel hooks. This is a bit of a hack.<br />
+Use `installation_instructions.txt` in the EE2 directory for details on using CodeIgniter hooks.
 
 
 ## Installation ##
 
 Choose EE1 or EE2 (depending on your installation).<br />
 Use the structure provided to place the files within your current EE installation.<br />
-Enable the extension in your EE control panel
+Enable the extension in your EE control panel.<br />
+Go to the extension settings and edit as necessary (at minimum, enter 'Support URL' and if using dropbox version 2, 'Dropbox ID').
 
 
 ## Support ##

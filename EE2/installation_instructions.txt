@@ -1,6 +1,9 @@
 Put each file in the location mimicked by the structure given.
 
-** core\expressionengine\config\hooks.php
+** system/expressionengine/config/config.php
+ - Set $config['enable_hooks'] = TRUE; (line 116)
+
+** system/expressionengine/config/hooks.php
  - Do not overwrite your existing hooks.php file with the contained hooks.php file -> you may lose functionality of other system if you do this
    1. Open the hooks.php file given here
    2. Copy the $hook['display_override'][] = array(...);
